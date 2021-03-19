@@ -48,26 +48,39 @@ namespace Sifry
         private static string CaesarSifra(string s, int key, bool choice)
         {
             string coded = "";
-            if (choice)
-            {
-                key = -key;
-            }
+
             foreach (char ch in s)
             {
+
                 if (ch == ' ')
                 {
                     coded += " ";
                 }
                 else
                 {
-                    if ((Convert.ToInt32(ch) >= Convert.ToInt32('z') - key && Convert.ToInt32(ch) <= Convert.ToInt32('z')) | (Convert.ToInt32(ch) >= Convert.ToInt32('Z') - key && Convert.ToInt32(ch) <= Convert.ToInt32('Z')))
+                    if (choice)
                     {
-                        coded += Convert.ToChar(Convert.ToInt32(ch) + key - 26);
+                        if ((Convert.ToInt32(ch) >= Convert.ToInt32('a') && Convert.ToInt32(ch) <= Convert.ToInt32('a') + key) | (Convert.ToInt32(ch) >= Convert.ToInt32('A') && Convert.ToInt32(ch) <= Convert.ToInt32('A') + key))
+                        {
+                            coded += Convert.ToChar(Convert.ToInt32(ch) - key + 26);
+                        }
+                        else
+                        {
+                            coded += Convert.ToChar(Convert.ToInt32(ch) - key);
+                        }
                     }
                     else
                     {
-                        coded += Convert.ToChar(Convert.ToInt32(ch) + key);
+                        if ((Convert.ToInt32(ch) >= Convert.ToInt32('z') - key && Convert.ToInt32(ch) <= Convert.ToInt32('z')) | (Convert.ToInt32(ch) >= Convert.ToInt32('Z') - key && Convert.ToInt32(ch) <= Convert.ToInt32('Z')))
+                        {
+                            coded += Convert.ToChar(Convert.ToInt32(ch) + key - 26);
+                        }
+                        else
+                        {
+                            coded += Convert.ToChar(Convert.ToInt32(ch) + key);
+                        }
                     }
+
                 }
 
             }
