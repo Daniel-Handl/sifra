@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Obecné informace o sestavení se řídí přes následující 
 // sadu atributů. Změnou hodnot těchto atributů se upraví informace
 // přidružené k sestavení.
-[assembly: AssemblyTitle("Sifry")]
+[assembly: AssemblyTitle("Sifra")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sifry")]
+[assembly: AssemblyProduct("Sifra")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Následující GUID se používá pro ID knihovny typů, pokud je tento projekt vystavený pro COM.
-[assembly: Guid("fc0307db-1272-48f4-b919-2d86d7d713d2")]
+[assembly: Guid("ce7db0f6-2ad3-42a9-b368-b0368d4fa3f2")]
 
 // Informace o verzi sestavení se skládá z těchto čtyř hodnot:
 //

@@ -18,7 +18,7 @@ namespace Sifry
             string xkey = "PRAVDA";
 
             Console.WriteLine(XORSifra(s, xkey));
-            Console.WriteLine(CaesarSifra(s, ckey)); 
+            Console.WriteLine(CaesarSifra(s, ckey));
         }
 
         private static string CaesarSifra(string s, int key)
@@ -28,11 +28,11 @@ namespace Sifry
             {
                 if (ch == 'z' | ch == 'Z')
                 {
-                    coded += Convert.ToChar(Convert.ToInt32(ch) + key-26);
+                    coded += Convert.ToChar(Convert.ToInt32(ch) + key - 26);
                 }
                 else
                 {
-                coded += Convert.ToChar(Convert.ToInt32(ch) + key);
+                    coded += Convert.ToChar(Convert.ToInt32(ch) + key);
                 }
             }
 
@@ -45,17 +45,17 @@ namespace Sifry
             string skey = "";
             int fch = 0;
             foreach (char ch in s)
-	        {
-                skey  += key.Substring(fch,1);
-                if (fch = key.Length-1)
-	            {
+            {
+                skey += key.Substring(fch, 1);
+                if (fch == key.Length - 1)
+                {
                     fch = 0;
-	            }
+                }
                 else
-	            {
+                {
                     fch++;
-	            }
-	        }
+                }
+            }
 
             return coded;
         }

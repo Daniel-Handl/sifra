@@ -1,2 +1,0 @@
-C:\Users\danth\Source\Repos\sifra\Sifry\obj\Debug\Sifry.csprojAssemblyReference.cache
-C:\Users\danth\Source\Repos\sifra\Sifry\obj\Debug\Sifry.csproj.CoreCompileInputs.cache

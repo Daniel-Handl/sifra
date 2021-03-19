@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FC0307DB-1272-48F4-B919-2D86D7D713D2}</ProjectGuid>
+    <ProjectGuid>{CE7DB0F6-2AD3-42A9-B368-B0368D4FA3F2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sifry</RootNamespace>
-    <AssemblyName>Sifry</AssemblyName>
+    <RootNamespace>Sifra</RootNamespace>
+    <AssemblyName>Sifra</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
