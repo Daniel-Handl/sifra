@@ -19,6 +19,7 @@ namespace Sifry
 
             Console.WriteLine(XORSifra(s, xkey));
             Console.WriteLine(CaesarSifra(s, ckey));
+            Console.ReadLine();
         }
 
         private static string CaesarSifra(string s, int key)
@@ -56,7 +57,12 @@ namespace Sifry
                     fch++;
                 }
             }
-
+            fch = 0;
+            foreach (char ch in s)
+            {
+                coded += Convert.ToChar(Convert.ToInt32(ch)^Convert.ToInt32(Convert.ToChar(skey.Substring(fch,1))));
+                fch++;
+            }
             return coded;
         }
     }

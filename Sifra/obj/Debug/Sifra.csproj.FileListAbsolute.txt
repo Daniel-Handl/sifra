@@ -1,0 +1,7 @@
+C:\Users\danth\source\repos\sifra\Sifra\bin\Debug\Sifra.exe.config
+C:\Users\danth\source\repos\sifra\Sifra\bin\Debug\Sifra.exe
+C:\Users\danth\source\repos\sifra\Sifra\bin\Debug\Sifra.pdb
+C:\Users\danth\source\repos\sifra\Sifra\obj\Debug\Sifra.csprojAssemblyReference.cache
+C:\Users\danth\source\repos\sifra\Sifra\obj\Debug\Sifra.csproj.CoreCompileInputs.cache
+C:\Users\danth\source\repos\sifra\Sifra\obj\Debug\Sifra.exe
+C:\Users\danth\source\repos\sifra\Sifra\obj\Debug\Sifra.pdb
