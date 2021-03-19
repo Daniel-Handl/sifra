@@ -42,7 +42,20 @@ namespace Sifry
         private static string XORSifra(string s, string key)
         {
             string coded = "";
-
+            string skey = "";
+            int fch = 0;
+            foreach (char ch in s)
+	        {
+                skey  += key.Substring(fch,1);
+                if (fch = key.Length-1)
+	            {
+                    fch = 0;
+	            }
+                else
+	            {
+                    fch++;
+	            }
+	        }
 
             return coded;
         }
