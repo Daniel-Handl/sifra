@@ -54,14 +54,22 @@ namespace Sifry
             }
             foreach (char ch in s)
             {
-                if (ch == 'z' | ch == 'Z')
+                if (ch == ' ')
                 {
-                    coded += Convert.ToChar(Convert.ToInt32(ch) + key - 26);
+                    coded += " ";
                 }
                 else
                 {
-                    coded += Convert.ToChar(Convert.ToInt32(ch) + key);
+                    if ((Convert.ToInt32(ch) >= Convert.ToInt32('z') - key && Convert.ToInt32(ch) <= Convert.ToInt32('z')) | (Convert.ToInt32(ch) >= Convert.ToInt32('Z') - key && Convert.ToInt32(ch) <= Convert.ToInt32('Z')))
+                    {
+                        coded += Convert.ToChar(Convert.ToInt32(ch) + key - 26);
+                    }
+                    else
+                    {
+                        coded += Convert.ToChar(Convert.ToInt32(ch) + key);
+                    }
                 }
+
             }
 
             return coded;
