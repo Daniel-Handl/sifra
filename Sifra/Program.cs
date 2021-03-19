@@ -10,6 +10,29 @@ namespace Sifry
     {
         static void Main(string[] args)
         {
+            bool incorrect = true;
+            string o;
+            bool choice = false;
+            Console.WriteLine("pokud chceš zašifrovat tak napiš 1 pokud chceš dešifrovat napiš 2 :");
+            do
+            {   
+                o = Console.ReadLine();
+                if (o == "1")
+                {
+                    choice = false;
+                    incorrect = false;
+                }
+                else if (o == "2")
+                {
+                    choice = true;
+                    incorrect = false;
+                }
+                else
+                {
+                    Console.WriteLine("Zkus to znova: ");
+                    incorrect = true;
+                }
+            } while (incorrect);
             Console.Write("text na zasifrování: ");
             string s = Console.ReadLine();
             string xor;
@@ -18,13 +41,17 @@ namespace Sifry
             string xkey = "PRAVDA";
 
             Console.WriteLine(XORSifra(s, xkey));
-            Console.WriteLine(CaesarSifra(s, ckey));
+            Console.WriteLine(CaesarSifra(s, ckey, choice));
             Console.ReadLine();
         }
 
-        private static string CaesarSifra(string s, int key)
+        private static string CaesarSifra(string s, int key, bool choice)
         {
             string coded = "";
+            if (choice)
+            {
+                key = -key;
+            }
             foreach (char ch in s)
             {
                 if (ch == 'z' | ch == 'Z')
